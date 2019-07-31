@@ -11,3 +11,7 @@ const todos = db.get('todos');
 exports.create = todo => {
   todos.push(todo).write();
 };
+
+exports.all = () => {
+  return todos.value();
+}

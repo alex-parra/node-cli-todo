@@ -8,8 +8,8 @@ const command = args[0];
 
 const routes = {
   help: () => printHelp(),
+  list: () => TodosController.index(),
   new: () => TodosController.new(),
-  get: () => console.log(`Task to run: ${command}`),
   complete: () => console.log(`Task to run: ${command}`),
 };
 

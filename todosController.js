@@ -9,3 +9,9 @@ exports.new = () => {
     Todos.create({ title: todo, complete: false });
   });
 };
+
+exports.index = () => {
+  Todos.all().forEach((todo, index) => {
+    console.log(`${index + 1}. ${todo.title}`);
+  });
+}

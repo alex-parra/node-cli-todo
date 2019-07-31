@@ -15,8 +15,8 @@ exports.printHelp = () => {
 
     commands can be:
 
+    list:     used to list your todos
     new:      used to create a new todo
-    get:      used to retrieve your todos
     complete: used to mark a todo as complete
     help:     used to print the usage guide
   `;
