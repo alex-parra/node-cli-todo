@@ -1,0 +1,24 @@
+{
+  "todos": [
+    {
+      "title": "Buy beers and garbage bags",
+      "complete": false
+    },
+    {
+      "title": "Proprli i18n",
+      "complete": false
+    },
+    {
+      "title": "MVC!",
+      "complete": false
+    },
+    {
+      "title": "I know JS",
+      "complete": false
+    },
+    {
+      "title": "Clean code",
+      "complete": false
+    }
+  ]
+}
