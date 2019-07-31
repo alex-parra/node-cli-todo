@@ -8,9 +8,9 @@ const command = args[0];
 
 const routes = {
   help: () => printHelp(),
-  list: () => TodosController.index(),
-  new: () => TodosController.new(),
-  complete: () => console.log(`Task to run: ${command}`),
+  list: () => TodosController.index( ...args.slice(1) ),
+  new: () => TodosController.new( ...args.slice(1) ),
+  complete: () => TodosController.complete( ...args.slice(1) ),
 };
 
 if (routes.hasOwnProperty(command)) {

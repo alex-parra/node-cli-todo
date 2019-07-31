@@ -13,12 +13,11 @@ exports.printHelp = () => {
   usage:
     todo <command>
 
-    commands can be:
-
-    list:     used to list your todos
-    new:      used to create a new todo
-    complete: used to mark a todo as complete
-    help:     used to print the usage guide
+  commands:
+    list              ${chalk.yellow('used to list your todos')}
+    new               ${chalk.yellow('used to create a new todo')}
+    complete {id}     ${chalk.yellow('used to mark a todo as complete')}
+    help              ${chalk.yellow('used to print the usage guide')}
   `;
 
   console.log(usageText);

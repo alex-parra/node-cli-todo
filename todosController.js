@@ -12,6 +12,10 @@ exports.new = () => {
 
 exports.index = () => {
   Todos.all().forEach((todo, index) => {
-    console.log(`${index + 1}. ${todo.title}`);
+    console.log(`${index + 1}. ${todo.title} ${todo.complete ? chalk.green('✔') : chalk.red('-')}`);
   });
+}
+
+exports.complete = (index) => {
+  Todos.update(index, {complete: true});
 }

@@ -14,4 +14,11 @@ exports.create = todo => {
 
 exports.all = () => {
   return todos.value();
-}
+};
+
+exports.update = (index, data) => {
+  todos
+    .find((todo, i) => i === index - 1)
+    .assign(data)
+    .write();
+};
